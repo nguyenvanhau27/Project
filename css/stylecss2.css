@@ -4,22 +4,19 @@
     box-sizing: border-box;
 }
 body{
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: white;
 }
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: pink; 
     font-family: 'Fraunces', serif;
-    border: 1px solid white;
-    box-shadow: 20px 20px 50px 10px #BA68C8 inset;
-}
+    
+ }
 .logo{
 	display: flex;
-	color: white;
+	color: black;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-size: 20px;
@@ -41,7 +38,7 @@ nav {
 	list-style: none;
 }
 .nav-links a{
-	color: white;
+	color: black;
 	text-decoration: none;
 	letter-spacing: 3px;
 	font-weight: bold;
@@ -67,20 +64,50 @@ nav {
 	margin: auto;
 	min-height: 80vh;
 	text-indent: 20px;
+	background: #E9D7D2;
 }
 .content iframe{
 	width: 80%;
 	height: 620px;
 }
 
-.text-footer{ 
-	color: white;
+footer{
+	background-color: #F3F3F3;
+	height: auto;
+	width: 100%;
 	font-family: 'Lobster', cursive;
-	text-align: center;
-	max-width: 90%
-	margin: auto;
+	color: black;
+	padding-top: 40px;
 }
-.
+.text-footer{ 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+.text-footer h4{
+	border-bottom: 1px solid black;
+	width: column;
+}
+.text-footer img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+}
+
+.socials {
+	display: flex;
+	text-decoration: none;
+	list-style: none;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+}
+.socials li{
+	margin: 0 10px;
+}
 @media screen and (max-width: 1024px){
 	.nav-links{
 		width: 60%;
@@ -93,15 +120,14 @@ nav {
 
 @media screen and (max-width: 768px){
 	body{
-		overflow-x: hidden;
-		background: #ffcdd2;	
+		overflow-x: hidden;	
 	}
 	.nav-links{
 		position: fixed;
 		right: 0px;
 		height: 92vh;
 		top: 8vh;
-		background-color: pink;
+		background-color: #F86B73;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -115,6 +141,9 @@ nav {
 	.burger{
 		display: block;
 		cursor: pointer;
+	}
+	.burger div{
+		background: #E9D7D2;
 	}
 	.content iframe{
 	width: 70%;
